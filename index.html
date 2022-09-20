@@ -4,115 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/simplereset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/simpleresetcss.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Brella</title>
 </head>
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="header__logo-wrapper">
-                <div class="header__logo">
-                    <a href="#">
-                    <svg width="98" height="21" viewBox="0 0 98 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M60.6667 0H64.2963V27.4815H60.6667V0ZM40.4444 18.6667C40.4444 21.0864 41.7193 26.4756 46.6667 25.9259C51.3333 25.4074 51.8518 21.2593 51.8518 21.2593H55.4815C55.4815 22.8148 53.1786 28 46.6667 28C39.4074 28 36.2963 22.2963 36.2963 18.6667C36.2963 15.037 37.3333 8.2963 46.6667 8.2963C54.1333 8.2963 56 14.5185 56 18.6667H40.4444ZM51.8518 16.5926H40.4444C40.7901 14.5185 41.4815 10.3704 46.6667 10.3704C51.1223 10.3704 51.8518 15.5556 51.8518 16.5926ZM72.5926 0H69.4815H68.963V27.4815H72.5926V0ZM25.9259 8.8148L27.4815 14C27.8272 12.2716 31.1111 7.77778 35.2593 8.8148V12.4444C32.8395 12.0988 28 13.1704 28 18.1481V27.4815H24.3704V8.8148H25.9259ZM93.8519 12.4444L95.4074 8.8148H97.4815V27.5912L93.3333 27.4815V24.3704C92.642 25.5802 90.4296 28 87.1111 28C82.963 28 76.7407 25.9259 76.7407 18.1481C76.7407 10.3704 82.963 7.77778 87.1111 8.29628C90.404 8.70789 92.9877 11.0617 93.8519 12.4444ZM93.3333 18.1481C93.3333 13.1704 89.7037 10.3704 87.1111 10.3704C84 10.3704 80.8889 12.3407 80.8889 18.1481C80.8889 23.9555 84 25.9259 87.1111 25.9259C89.1852 25.9259 93.3333 23.1259 93.3333 18.1481ZM0 27.4815V1.55556H12.4444C15.5556 1.55556 18.6667 3.11111 18.6667 7.77778C18.6667 12.4444 14.5185 13.4815 12.4444 14C14.8642 14 19.7037 15.3481 19.7037 20.7407C19.7037 26.1333 15.2099 27.4815 12.963 27.4815H0ZM4.14815 3.62963V12.963H10.8889C12.4444 12.963 14.5185 10.3704 14.5185 7.77778C14.5185 5.13384 11.9259 3.62963 10.3704 3.62963H4.14815ZM4.14815 15.037V25.4074H11.4074C13.1358 25.0617 15.5556 23.6444 15.5556 20.7407C15.5556 17.1111 12.963 15.037 10.3704 15.037H4.14815Z" fill="#214E41" />
-                        </svg>  
-                    </a>                                                 
-                </div>                                                                                                                                                                  
-            </div>
-            <div class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-buttons">Our Plan</li>
-                    <li class="header__nav-buttons">Employers</li>
-                    <li class="header__nav-buttons">Brokers</li>
-                    <li class="header__nav-buttons">Members</li>
-                    <li class="header__nav-buttons">About</li>
-                    <li class="header__nav-buttons">Blog</li>
-                </ul>
-            </div>
-            <div class="header__other-elements">
-                <div class="header__demo-wrapper">
-                    <div class="header__demo">
-                        <p class="demo-text">Request a demo</p>
-                    </div>
-                </div>
-                <div class="header__login-wrapper">
-                    <div class="header__login">
-                        <p class="login-text">Login</p>
-                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.3371 1.18649L11.3988 0.113544L6.46055 5.7606L1.53874 0.113544L0.600464 1.18649L6.46055 7.88766H6.47701L12.3371 1.18649Z" fill="#214E41"/>
-                            </svg>                        
-                    </div>
-                </div>
-                <div class="header__lang-wrapper">
-                    <div class="header__lang">
-                        <p class="lang-text">en</p>
-                    </div>
+    <header class="header">
+        <div class="header__logo-wrapper">
+            <div class="header__logo">
+                <a href="#">
+                <svg width="98" height="21" viewBox="0 0 98 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.6667 0H64.2963V27.4815H60.6667V0ZM40.4444 18.6667C40.4444 21.0864 41.7193 26.4756 46.6667 25.9259C51.3333 25.4074 51.8518 21.2593 51.8518 21.2593H55.4815C55.4815 22.8148 53.1786 28 46.6667 28C39.4074 28 36.2963 22.2963 36.2963 18.6667C36.2963 15.037 37.3333 8.2963 46.6667 8.2963C54.1333 8.2963 56 14.5185 56 18.6667H40.4444ZM51.8518 16.5926H40.4444C40.7901 14.5185 41.4815 10.3704 46.6667 10.3704C51.1223 10.3704 51.8518 15.5556 51.8518 16.5926ZM72.5926 0H69.4815H68.963V27.4815H72.5926V0ZM25.9259 8.8148L27.4815 14C27.8272 12.2716 31.1111 7.77778 35.2593 8.8148V12.4444C32.8395 12.0988 28 13.1704 28 18.1481V27.4815H24.3704V8.8148H25.9259ZM93.8519 12.4444L95.4074 8.8148H97.4815V27.5912L93.3333 27.4815V24.3704C92.642 25.5802 90.4296 28 87.1111 28C82.963 28 76.7407 25.9259 76.7407 18.1481C76.7407 10.3704 82.963 7.77778 87.1111 8.29628C90.404 8.70789 92.9877 11.0617 93.8519 12.4444ZM93.3333 18.1481C93.3333 13.1704 89.7037 10.3704 87.1111 10.3704C84 10.3704 80.8889 12.3407 80.8889 18.1481C80.8889 23.9555 84 25.9259 87.1111 25.9259C89.1852 25.9259 93.3333 23.1259 93.3333 18.1481ZM0 27.4815V1.55556H12.4444C15.5556 1.55556 18.6667 3.11111 18.6667 7.77778C18.6667 12.4444 14.5185 13.4815 12.4444 14C14.8642 14 19.7037 15.3481 19.7037 20.7407C19.7037 26.1333 15.2099 27.4815 12.963 27.4815H0ZM4.14815 3.62963V12.963H10.8889C12.4444 12.963 14.5185 10.3704 14.5185 7.77778C14.5185 5.13384 11.9259 3.62963 10.3704 3.62963H4.14815ZM4.14815 15.037V25.4074H11.4074C13.1358 25.0617 15.5556 23.6444 15.5556 20.7407C15.5556 17.1111 12.963 15.037 10.3704 15.037H4.14815Z" fill="#214E41" />
+                    </svg>  
+                </a>                                                 
+            </div>                                                                                                                                                                  
+        </div>
+        <div class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-buttons">Our Plan</li>
+                <li class="header__nav-buttons">Employers</li>
+                <li class="header__nav-buttons">Brokers</li>
+                <li class="header__nav-buttons">Members</li>
+                <li class="header__nav-buttons">About</li>
+                <li class="header__nav-buttons">Blog</li>
+            </ul>
+        </div>
+        <div class="header__other-elements">
+            <div class="header__demo-wrapper">
+                <div class="header__demo">
+                    <p class="demo-text">Request a demo</p>
                 </div>
             </div>
-        </header>
+            <div class="header__login-wrapper">
+                <div class="header__login">
+                    <p class="login-text">Login</p>
+                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.3371 1.18649L11.3988 0.113544L6.46055 5.7606L1.53874 0.113544L0.600464 1.18649L6.46055 7.88766H6.47701L12.3371 1.18649Z" fill="#214E41"/>
+                        </svg>                        
+                </div>
+            </div>
+            <div class="header__lang-wrapper">
+                <div class="header__lang">
+                    <p class="lang-text">en</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
         <section class="header__search">
             <p class="header__quote1">Give your team peace of mind with supplemental health insurance from Brella.</p>
             <p class="header__quote2">I'm wondering...</p>
             <div class="header__search-container">
-                <input class="header__ins" placeholder="how Brella's plan works" type="search" name="" id="srch">
-                <input class="header__inb" type="button" value="Find out" for="srch">
+                <input class="header__input-search" placeholder="how Brella's plan works" type="search" name="" id="srch">
+                <input class="header__input-button" type="button" value="Find out" for="srch">
             </div>
         </section>
-        <section class="ben-container">
-            <div class="ben-container__wrapper">
-                <img class="ben-container__umbrella" src="./img/umbrella.png" alt="umbrella">
-                <div class="ben-container__descr-wrapper">
-                    <p class="ben-container__descrh">More coverage</p>
-                    <p class="ben-container__descr">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</p>
+        <section class="benefits-container">
+            <div class="benefits-container__wrapper">
+                <img class="benefits-container__umbrella" src="/img/umbrella.png" alt="umbrella">
+                <div class="benefits-container__description-wrapper">
+                    <p class="benefits-container__description-header">More coverage</p>
+                    <p class="benefits-container__description">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</p>
                 </div>  
             </div>
-            <div class="ben-container__wrapper">
-                <img class="ben-container__checkmark" src="./img/checkmark.png" alt="checkmark">
-                <div class="ben-container__descr-wrapper">    
-                    <p class="ben-container__descrh">Less hassle</p>
-                    <p class="ben-container__descr">One easy-to-manage plan with paperless install and online admin tools.</p>
+            <div class="benefits-container__wrapper">
+                <img class="benefits-container__checkmark" src="/img/checkmark.png" alt="checkmark">
+                <div class="benefits-container__description-wrapper">    
+                    <p class="benefits-container__description-header">Less hassle</p>
+                    <p class="benefits-container__description">One easy-to-manage plan with paperless install and online admin tools.</p>
                 </div>   
             </div>
-            <div class="ben-container__wrapper">
-                <img class="ben-container__moneybox" src="./img/moneybox.png" alt="moneybox">
-                <div class="ben-container__descr-wrapper">
-                    <p class="ben-container__descrh">Faster benefits</p>
-                        <p class="ben-container__descr">Brella pays claims in hours–not weeks so your people can rest easy.</p>
+            <div class="benefits-container__wrapper">
+                <img class="benefits-container__moneybox" src="/img/moneybox.png" alt="moneybox">
+                <div class="benefits-container__description-wrapper">
+                    <p class="benefits-container__description-header">Faster benefits</p>
+                        <p class="benefits-container__description">Brella pays claims in hours–not weeks so your people can rest easy.</p>
                 </div>
             </div>
         </section>
         <main>
-            <section class="banner-container">
-                <div class="banner-container__reasons-wrapper">
-                    <p class="banner-container__legend">Why Brella?</p>
-                    <h2 class="banner-container__heading">Today, any health insurance deductible can feel like a high deductible.</h2>
-                    <p class="banner-container__descr">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p> 
-                    <div class="banner-container__percent-link-wrapper">
-                        <a href="#" class="banner-container__planlink">See our plan</a>    
-                        <div class="banner-container__planlink-hr"></div>
+            <section class="whyBrella-container">
+                <div class="whyBrella-container__reasons-wrapper">
+                    <p class="whyBrella-container__legend">Why Brella?</p>
+                    <h2 class="whyBrella-container__heading">Today, any health insurance deductible can feel like a high deductible.</h2>
+                    <p class="whyBrella-container__description">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p> 
+                    <div class="whyBrella-container__percent-link-wrapper">
+                        <a href="#" class="whyBrella-container__planlink">See our plan</a>    
+                        <div class="whyBrella-container__planlink-hr"></div>
                     </div>
                 </div>
-                <div class="banner-container__statistic-wrapper">
-                    <div class="banner-container__percent-wrapper">
-                        <h2 class="banner-container__percent">60%</h2>
-                        <div class="banner-container__hr"></div>
-                        <p class="banner-container__percent-descr">of Americans
-                            <a href="#" class="banner-container__percent-link">would have to borrow</a>
+                <div class="whyBrella-container__statistic-wrapper">
+                    <div class="whyBrella-container__percent-wrapper">
+                        <h2 class="whyBrella-container__percent">60%</h2>
+                        <div class="whyBrella-container__hr"></div>
+                        <p class="whyBrella-container__percent-description">of Americans
+                            <a href="#" class="whyBrella-container__percent-link">would have to borrow</a>
                         </p>
-                        <p class="banner-container__percent-descr">to cover an unexpected $1000 expense</p>
+                        <p class="whyBrella-container__percent-description">to cover an unexpected $1000 expense</p>
                     </div>
-                    <div class="banner-container__table-wrapper">
-                        <table class="banner-container__table">
+                    <div class="whyBrella-container__table-wrapper">
+                        <table class="whyBrella-container__table">
                             <tbody>
                                 <tr>
                                     <td>
                                         <p>$1,644</p>
-                                        <img src="./img/widescale.png" alt="Deductible">
+                                        <img src="/img/widescale.png" alt="Deductible">
                                     </td>
                                     <td>
                                         <p>$4,039</p>
-                                        <img src="./img/tightscale.png" alt="Annual Max">
+                                        <img src="/img/tightscale.png" alt="Annual Max">
                                     </td>
                                 </tr>
                                 <tr>
@@ -127,16 +129,16 @@
                     </div>
                 </div>
             </section>
-            <section class="banner2-container">
-                <div class="banner2-container__ban1">
-                    <p class="banner2-container__legend">brella brings</p>
-                    <div class="banner2-container__headlink-wrap">
-                        <h2 class="banner2-container__headlink">Customizable benefits</h2>
+            <section class="BrellaBrings-container">
+                <div class="BrellaBrings-container__banner-left">
+                    <p class="BrellaBrings-container__legend">brella brings</p>
+                    <div class="BrellaBrings-container__headlink-wrap">
+                        <h2 class="BrellaBrings-container__headlink">Customizable benefits</h2>
                         <svg class="rightvector" width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.414429 10.5034H20.901L14.1242 17.1924L15.6099 18.6589L23.3249 11.0179H23.351L24.8106 9.57723L23.351 8.11079H23.3249L15.6099 0.469849L14.1242 1.93629L20.7446 8.44524H0.414429V10.5034Z" fill="#214E41"/>
                             </svg>                            
                     </div>
-                    <ul class="banner2-container__list">
+                    <ul class="BrellaBrings-container__list">
                         <li>Paperless install & admin</li>
                         <li>Effortless enrollment</li>
                         <li>Easy claims experience</li>
@@ -144,128 +146,125 @@
                         <li>Concierge support</li>
                     </ul>
                 </div>
-                <div class="banner2-container__ban2">
-                    <p class="banner2-container__ban-descr">Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.</p>
-                    <p class="banner2-container__ban-descr">Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.</p>
+                <div class="BrellaBrings-container__banner-right">
+                    <p class="BrellaBrings-container__banner-description">Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.</p>
+                    <p class="BrellaBrings-container__banner-description">Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.</p>
                 </div>
             </section>
-            <section class="banner3-container">
-                <div class="banner3-container__section1">
-                    <div class="banner3-container__wrapper1">
-                        <p class="banner3-container__legend1">one plan, more coverage</p>
-                        <h2 class="banner3-container__headlink1">No one can predict which health issues might come their way.</h2>
-                        <p class="banner3-container__ban-descr1">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.</p>    
+            <section class="Oneplan-container">
+                <div class="Oneplan-container__NoOne-section">
+                    <div class="Oneplan-container__wrapper-left">
+                        <p class="Oneplan-container__legend-left">one plan, more coverage</p>
+                        <h2 class="Oneplan-container__headlink-left">No one can predict which health issues might come their way.</h2>
+                        <p class="Oneplan-container__banner-description-left">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.</p>    
                     </div>
-                    <div class="banner3-container__wrapper2">
-                        <img src="./img/family.png" alt="family" class="banner3-container__illustration1">
+                    <div class="Oneplan-container__wrapper-right">
+                        <img src="/img/family.png" alt="family" class="Oneplan-container__fam-illustration">
                     </div>
                 </div>
-                <div class="banner3-container__section2">
-                    <table>
-                        <tr>
-                            <td>5K</td>
-                            <td>1X</td>
-                            <td>40%</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>covered injuries and illnesses from fractures and appendicitis to cancer</td>
-                            <td>more covered conditions than Accident and Critical Illness plans—combined</td>
-                            <td>plans are 100% guaranteed issue. No medical underwriting required</td>
-                            <td>Zero limitations or exclusions for pre-existing conditions</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="banner3-container__section3">
-                    <div class="banner3-container__wrapper3">
-                        <img src="./img/iphone.png" alt="iphone" class="banner3-container__illustration2">
+                <div class="Oneplan-container__section-bigNumbers">
+                    <div class="Oneplan-container__wrapper">
+                        <div class="Oneplan-container__head">5K</div>
+                        <div class="Oneplan-container__description">covered injuries and illnesses from fractures and appendicitis to cancer</div>
                     </div>
-                    <div class="banner3-container__wrapper4">
-                        <p class="banner3-container__legend2">a better claims experience</p>
-                        <h2 class="banner3-container__headlink2">Give your people a plan that pays in hours—not weeks.</h2>
-                        <p class="banner3-container__ban-descr2">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
+                    <div class="Oneplan-container__wrapper">
+                        <div class="Oneplan-container__head">1X</div>
+                        <div class="Oneplan-container__description">more covered conditions than Accident and Critical Illness plans—combined</div>
+                    </div>
+                    <div class="Oneplan-container__wrapper">
+                        <div class="Oneplan-container__head">40%</div>
+                        <div class="Oneplan-container__description">plans are 100% guaranteed issue. No medical underwriting required</div>
+                    </div>
+                    <div class="Oneplan-container__wrapper">
+                        <div class="Oneplan-container__head">0</div>
+                        <div class="Oneplan-container__description">Zero limitations or exclusions for pre-existing conditions</div>
+                    </div>
+                </div>
+                <div class="Oneplan-container__betterClaims-section">
+                    <div class="Oneplan-container__Iphone-wrapper">
+                        <img src="/img/iphone.png" alt="iphone" class="Oneplan-container__iphone-illustration">
+                    </div>
+                    <div class="Oneplan-container__nearIphone-wrapper">
+                        <p class="Oneplan-container__nearIphone-legend">a better claims experience</p>
+                        <h2 class="Oneplan-container__nearIphone-headlink">Give your people a plan that pays in hours—not weeks.</h2>
+                        <p class="Oneplan-container__nearIphone-description">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
                         <div class="videolink"><a href="#" target="_blank" rel="noopener noreferrer">Play Video</a></div>    
-                        <div class="banner3-container__hr"></div>
+                        <div class="Oneplan-container__hr"></div>
                     </div>
                 </div>
             </section>
-            <section class="banner4-container">
-                <div class="banner4-container__wrapper">
-                    <p class="banner4-container__legend2">for employers</p>
-                    <h2 class="banner4-container__headlink2">Easy enrollment meets simple administration.</h2>
-                    <p class="banner4-container__ban-descr2">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
+            <section class="forEmployers-container">
+                <div class="forEmployers-container__wrapper">
+                    <p class="forEmployers-container__legend">for employers</p>
+                    <h2 class="forEmployers-container__headlink">Easy enrollment meets simple administration.</h2>
+                    <p class="forEmployers-container__banner-description">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
                     <div class="videolink"><a href="#" target="_blank" rel="noopener noreferrer">Learn more</a></div>    
-                    <div class="banner4-container__hr"></div>
+                    <div class="forEmployers-container__hr"></div>
                 </div>
             </section>
-            <section class="banner5-container">
-                <div class="banner5-container5__wrapper1">
-                    <h2 class="banner5-container__headlink">Proudly backed by</h2>
-                    <div class="banner5-container__wrapslide">
-                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <section class="proudly-container">
+                <div class="proudly-container__head-wrapper">
+                    <h2 class="proudly-container__headlink">Proudly backed by</h2>
+                    <div class="proudly-container__wrapslide">
+                       <!-- <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24.8106 8.62521H4.32406L11.1008 1.93617L9.64118 0.469727L1.90009 8.11066L0.414421 9.57711L1.90009 11.0178L9.64118 18.6588L11.1008 17.1923L4.50651 10.6834H24.8106V8.62521Z" fill="#214E41"/>
-                            </svg>
-                            <img src="./img/brewerlane.png" alt="brewerlane" class="banner5-container__illustration1"> 
-                            <img src="./img/twosigma.png" alt="twosigma" class="banner5-container__illustration2">  
-                            <img src="./img/digitalis.png" alt="digitalis" class="banner5-container__illustration3">  
-                            <img src="./img/founder.png" alt="founder" class="banner5-container__illustration4">  
-                            <img src="./img/symphonyAl.png" alt="symphonyAl" class="banner5-container__illustration5">   
-                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            </svg> -->
+                            <img src="/img/brewerlane.png" alt="brewerlane" class="proudly-container__illustration1"> 
+                            <img src="/img/twosigma.png" alt="twosigma" class="proudly-container__illustration2">  
+                            <img src="/img/digitalis.png" alt="digitalis" class="proudly-container__illustration3">  
+                            <img src="/img/founder.png" alt="founder" class="proudly-container__illustration4">  
+                            <img src="/img/symphonyAl.png" alt="symphonyAl" class="proudly-container__illustration5">   
+                      <!--  <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.414429 10.5033H20.901L14.1242 17.1923L15.6099 18.6588L23.3249 11.0178H23.351L24.8106 9.57711L23.351 8.11066H23.3249L15.6099 0.469727L14.1242 1.93617L20.7446 8.44512H0.414429V10.5033Z" fill="#214E41"/>
-                            </svg>
+                            </svg> -->
                     </div>
-                    <div class="banner5-container__hr"></div>
+                    <div class="proudly-container__hr"></div>
                 </div>
-                <div class="banner5-container5__wrapper2">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="./img/womenavatar.png" alt="womenavatar" class="banner5-container__img1"> 
-                            </td>
-                            <td>
-                                <img src="./img/discussion.png" alt="discussion" class="banner5-container__img2"> 
-                            </td>
-                            <td>
-                                <img src="./img/menavatar.png" alt="menavatar" class="banner5-container__img3"> 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Podcast</td>
-                            <td>Insurance Innovation</td>
-                            <td>Benefits Strategy</td>
-                        </tr>
-                        <tr>
-                            <td>Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</td>
-                            <td>How to Design Simpler Insurance Benefits</td>
-                            <td>Executive Benefits Outlook with Dan Aceti</td>
-                        </tr>
-                    </table>
+                <div class="proudly-container__banners-wrapper">
+                    <div class="proudly-container__banners">
+                        <img src="/img/womenavatar.png" alt="Women Avatar" class="proudly-container__img">
+                            <p class="proudly-container__head">PODCAST</p>
+                            <p class="proudly-container__description">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</p>
+                        </img>
+                    </div>
+                    <div class="proudly-container__banners">
+                        <img src="/img/discussion.png" alt="Discussion" class="proudly-container__img">
+                            <p class="proudly-container__head">INSURANCE INNOVATION</p>
+                            <p class="proudly-container__description">How to Design Simpler Insurance Benefits</p>
+                        </img>
+                    </div>
+                    <div class="proudly-container__banners">
+                        <img src="/img/menavatar.png" alt="Menavatar" class="proudly-container__img">
+                            <p class="proudly-container__head">BENEFITS STRATEGY</p>
+                            <p class="proudly-container__description">Executive Benefits Outlook with Dan Aceti</p>
+                        </img>
+                    </div>
                 </div>
             </section>
-            <section class="banner6-container">
-                <div class="banner6-container__ban1">
-                 <!--   <img src="./img/oldman.png" alt="old man" class="banner6-container__oldman"> -->
+            <section class="letsTalk-container">
+                <div class="letsTalk-container__illustration"> 
+                 <!--   <img src="/img/oldman.png" alt="old man" class="letsTalk-container__oldman"> -->
                 </div>
-                <div class="banner6-container__ban2">
-                    <h2 class="banner6-container__headlink1">Ready to explore Brella’s supplemental health solution?</h2>
-                    <h2 class="banner6-container__headlink2">Let’s talk.</h2>
-                        <input type="button" class="banner6-container__button" value="Get in touch">
+                <div class="letsTalk-container__description">
+                    <h2 class="letsTalk-container__first-headlink">Ready to explore Brella’s supplemental health solution?</h2>
+                    <h2 class="letsTalk-container__second-headlink">Let’s talk.</h2>
+                        <input type="button" class="letsTalk-container__button" value="Get in touch">
             </section>
         </main>
         <footer class="footer">
             <div class="foot-container">
-                <div class="foot-container__wrapper1">
+                <div class="foot-container__top-wrapper">
                     <svg width="98" height="28" viewBox="0 0 98 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M60.6667 0H64.2963V27.4815H60.6667V0ZM40.4444 18.6667C40.4444 21.0864 41.7193 26.4756 46.6667 25.9259C51.3333 25.4074 51.8518 21.2593 51.8518 21.2593H55.4815C55.4815 22.8148 53.1786 28 46.6667 28C39.4074 28 36.2963 22.2963 36.2963 18.6667C36.2963 15.037 37.3333 8.2963 46.6667 8.2963C54.1333 8.2963 56 14.5185 56 18.6667H40.4444ZM51.8518 16.5926H40.4444C40.7901 14.5185 41.4815 10.3704 46.6667 10.3704C51.1223 10.3704 51.8518 15.5556 51.8518 16.5926ZM72.5926 0H69.4815H68.963V27.4815H72.5926V0ZM25.9259 8.8148L27.4815 14C27.8272 12.2716 31.1111 7.77778 35.2593 8.8148V12.4444C32.8395 12.0988 28 13.1704 28 18.1481V27.4815H24.3704V8.8148H25.9259ZM93.8519 12.4444L95.4074 8.8148H97.4815V27.5912L93.3333 27.4815V24.3704C92.642 25.5802 90.4296 28 87.1111 28C82.963 28 76.7407 25.9259 76.7407 18.1481C76.7407 10.3704 82.963 7.77778 87.1111 8.29628C90.404 8.70789 92.9877 11.0617 93.8519 12.4444ZM93.3333 18.1481C93.3333 13.1704 89.7037 10.3704 87.1111 10.3704C84 10.3704 80.8889 12.3407 80.8889 18.1481C80.8889 23.9555 84 25.9259 87.1111 25.9259C89.1852 25.9259 93.3333 23.1259 93.3333 18.1481ZM0 27.4815V1.55556H12.4444C15.5556 1.55556 18.6667 3.11111 18.6667 7.77778C18.6667 12.4444 14.5185 13.4815 12.4444 14C14.8642 14 19.7037 15.3481 19.7037 20.7407C19.7037 26.1333 15.2099 27.4815 12.963 27.4815H0ZM4.14815 3.62963V12.963H10.8889C12.4444 12.963 14.5185 10.3704 14.5185 7.77778C14.5185 5.13384 11.9259 3.62963 10.3704 3.62963H4.14815ZM4.14815 15.037V25.4074H11.4074C13.1358 25.0617 15.5556 23.6444 15.5556 20.7407C15.5556 17.1111 12.963 15.037 10.3704 15.037H4.14815Z" fill="#fff" />
                         </svg>  
-                    <dl class="foot-container__footnav1">
+                    <dl class="foot-container__foot-navigation">
                         <dt>Join Brella</dt>
                         <dd>Our Plan</dd>
                         <dd>Employers</dd>
                         <dd>Brokers</dd>
                         <dd>Members</dd>
                     </dl>
-                    <dl class="foot-container__footnav2">
+                    <dl class="foot-container__foot-navigation_margin">
                         <dt>Company</dt>
                         <dd>About</dd>
                         <dd>Blog</dd>
@@ -282,18 +281,18 @@
                                  <path d="M0 7.17114H15.9551L10.6774 11.9519L11.8344 13L17.8429 7.5389H17.8632L19 6.50919L17.8632 5.4611H17.8429L11.8344 0L10.6774 1.04809L15.8333 5.70014H0V7.17114Z" fill="#214E41"/>
                                  </svg>                                
                                 <input class="foot-container__inb" type="button"  for="email">    
-                               <!-- <img class="foot-container__in-img" src="./img/Vright2.png" alt=""> -->
+                               <!-- <img class="foot-container__in-img" src="/img/Vright2.png" alt=""> -->
                             </div>
                         </div>
                         <div class="foot-container__svg">
-                            <div class="foot-container__link1">
+                            <div class="foot-container__link-linkedIn">
                                 <a href="#" class="linkedIn">
                                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M24.0807 0H1.91931C1.41027 0 0.922092 0.202212 0.562152 0.562152C0.202212 0.922092 0 1.41027 0 1.91931V24.0807C0 24.5897 0.202212 25.0779 0.562152 25.4379C0.922092 25.7978 1.41027 26 1.91931 26H24.0807C24.5897 26 25.0779 25.7978 25.4379 25.4379C25.7978 25.0779 26 24.5897 26 24.0807V1.91931C26 1.41027 25.7978 0.922092 25.4379 0.562152C25.0779 0.202212 24.5897 0 24.0807 0ZM7.74944 22.1488H3.84042V9.73195H7.74944V22.1488ZM5.79222 8.01125C5.34881 8.00875 4.91608 7.87496 4.54863 7.62676C4.18118 7.37856 3.89549 7.02708 3.72762 6.61666C3.55974 6.20625 3.5172 5.75531 3.60537 5.32074C3.69353 4.88618 3.90845 4.48747 4.223 4.17493C4.53755 3.86239 4.93763 3.65004 5.37276 3.56467C5.80788 3.47929 6.25854 3.52473 6.66786 3.69523C7.07719 3.86574 7.42683 4.15368 7.67267 4.52271C7.91851 4.89175 8.04952 5.32533 8.04917 5.76875C8.05335 6.06562 7.99772 6.36029 7.8856 6.63521C7.77347 6.91012 7.60715 7.15964 7.39654 7.36891C7.18592 7.57817 6.93534 7.74289 6.65971 7.85325C6.38408 7.9636 6.08906 8.01734 5.79222 8.01125ZM22.1578 22.1596H18.2506V15.3761C18.2506 13.3756 17.4001 12.7581 16.3024 12.7581C15.1432 12.7581 14.0057 13.6319 14.0057 15.4267V22.1596H10.0967V9.74097H13.8558V11.4617H13.9064C14.2838 10.6979 15.6054 9.3925 17.6222 9.3925C19.8033 9.3925 22.1596 10.6871 22.1596 14.4788L22.1578 22.1596Z" fill="white"/>
                                         </svg>
                                 </a>
                             </div>
-                            <div class="foot-container__link2">
+                            <div class="foot-container__link-YouTube">
                                 <a href="#" class="linkedIn">
                                     <svg  width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M25.4818 3.70082C25.3348 3.14769 25.0451 2.64286 24.6417 2.23686C24.2383 1.83087 23.7353 1.53795 23.1831 1.38741C21.1504 0.84082 13.0254 0.84082 13.0254 0.84082C13.0254 0.84082 4.90039 0.84082 2.86766 1.38741C2.31548 1.53795 1.81252 1.83087 1.40912 2.23686C1.00572 2.64286 0.716022 3.14769 0.569027 3.70082C0.0253907 5.74241 0.0253906 9.9999 0.0253906 9.9999C0.0253906 9.9999 0.0253907 14.2574 0.569027 16.299C0.716022 16.8521 1.00572 17.357 1.40912 17.763C1.81252 18.169 2.31548 18.4619 2.86766 18.6124C4.90039 19.159 13.0254 19.159 13.0254 19.159C13.0254 19.159 21.1504 19.159 23.1831 18.6124C23.7353 18.4619 24.2383 18.169 24.6417 17.763C25.0451 17.357 25.3348 16.8521 25.4818 16.299C26.0254 14.2574 26.0254 9.9999 26.0254 9.9999C26.0254 9.9999 26.0254 5.74241 25.4818 3.70082Z" fill="#FAFAFA"/>
@@ -303,7 +302,7 @@
                                             </svg>    
                                 </a>
                             </div>
-                            <div class="foot-container__link3">
+                            <div class="foot-container__link-Twitter">
                                 <a href="#" class="linkedIn">
                                     <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.17648 21.5629C17.9878 21.5629 23.3542 13.4343 23.3542 6.38512C23.3542 6.15424 23.3542 5.9244 23.3386 5.6956C24.3826 4.94047 25.2838 4.00548 26 2.9344C25.0265 3.366 23.9937 3.64892 22.9362 3.77368C24.0498 3.10709 24.8833 2.05853 25.2814 0.823196C24.2343 1.44461 23.0887 1.88251 21.8941 2.118C21.0898 1.26279 20.0261 0.696491 18.8675 0.506737C17.709 0.316984 16.5202 0.514353 15.4851 1.06831C14.4501 1.62226 13.6264 2.5019 13.1416 3.57113C12.6569 4.64035 12.538 5.83954 12.8034 6.98312C10.6826 6.87673 8.6079 6.32557 6.71391 5.36541C4.81992 4.40524 3.14899 3.05753 1.8096 1.40976C1.12746 2.58409 0.918528 3.97426 1.22536 5.29722C1.53219 6.62018 2.3317 7.77646 3.46112 8.53064C2.61217 8.50577 1.7817 8.27674 1.04 7.86296V7.93056C1.04034 9.16215 1.46667 10.3557 2.24669 11.3088C3.02672 12.2619 4.1124 12.9159 5.3196 13.1597C4.53427 13.3739 3.71028 13.4052 2.91096 13.2512C3.25197 14.3111 3.91563 15.2379 4.80918 15.9021C5.70272 16.5663 6.78148 16.9347 7.89464 16.9557C6.78864 17.8251 5.52209 18.4678 4.16745 18.8472C2.8128 19.2266 1.39665 19.3352 0 19.1668C2.43949 20.7322 5.27792 21.5626 8.17648 21.5588" fill="#FAFAFA"/>
@@ -314,12 +313,12 @@
                     </div>
                 </div>
                 <div class="foot-container__hr"></div>
-                <div class="foot-container__wrapper2">
-                    <p class="foot-container__descr">Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.</p>
-                    <p class="foot-container__descr">Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX</p>
-                    <p class="foot-container__descr">Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at <span>(844) 987-1070</span></p>
+                <div class="foot-container__middle-wrapper">
+                    <p class="foot-container__description">Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.</p>
+                    <p class="foot-container__description">Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX</p>
+                    <p class="foot-container__description">Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at <span>(844) 987-1070</span></p>
                 </div>
-                <div class="foot-container__wrapper3">
+                <div class="foot-container__bottom-wrapper">
                     <div class="foot-container__rights">
                         <p class="foot-container__rights-p">© 2021 Brella Insurance Inc. All Rights Reserved.</p>
                     </div>
@@ -331,5 +330,8 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/js/slider.js"></script>    
 </body>
 </html>
