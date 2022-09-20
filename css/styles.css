@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
 }
-.page {
+.container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -150,8 +150,8 @@
     border-radius: 6px;
     overflow: hidden;
 }
-.header__ins,
-.header__ins::placeholder {
+.header__input-search,
+.header__input-search::placeholder {
     width: 280px;
     height: 100%;
     border: none;
@@ -164,14 +164,14 @@
     padding-left: 20px;
     
 }
-.header__ins:focus {
+.header__input-search:focus {
     outline: none;
 }
-.header__ins:focus::placeholder {
+.header__input-search:focus::placeholder {
     opacity: 0;
     transition: all 0.2s;
 }
-.header__inb {
+.header__input-button {
     width: 123px;
     height: 100%;
     background-color: #43806C;
@@ -184,12 +184,12 @@
     color: #FFFFFF;
     padding: 20px 35px;
 }
-.header__inb:hover {
+.header__input-button:hover {
     cursor: pointer;
     background-color: #8faea3;
     transition: all 0.1s;
 }
-.ben-container {
+.benefits-container {
     width: 1200px;
     height: 171px;
     display: flex;
@@ -201,22 +201,22 @@
     box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
     border-radius: 6px;
 }
-.ben-container__wrapper {
+.benefits-container__wrapper {
     display: flex;
     width: 356px;
     height: 71px;
     padding: 48px 0 52px;
 }
-.ben-container__wrapper:first-child {
+.benefits-container__wrapper:first-child {
     margin-left: 50px;
 }
-.ben-container__wrapper:nth-child(2) {
+.benefits-container__wrapper:nth-child(2) {
     margin-left: 45px;
 }
-.ben-container__descr-wrapper {
+.benefits-container__description-wrapper {
     margin-left: 10px;
 }
-.ben-container__descrh {
+.benefits-container__description-header {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -224,35 +224,35 @@
     line-height: 24px;
     color: #214E41;
 }
-.ben-container__descr {
+.benefits-container__description {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 4iption-0eader0;
     font-size: 14px;
     line-height: 20px;
     color: #214E41;
     margin-top: 7px;
 }
-.ben-container__umbrella {
+.benefits-container__umbrella {
     width: 41px;
     height: 45px;
 }
-.ben-container__checkmark {
+.benefits-container__checkmark {
     width: 46px;
     height: 45px;
 }
-.ben-container__moneybox {
+.benefits-container__moneybox {
     width: 58px;
     height: 45px;
 }
-.banner-container {
+.whyBrella-container {
     width: 1200px;
     margin: 213px auto 120px auto;
     display: flex;
     justify-content: center;
     gap: 103px;
 }
-.banner-container__legend {
+.whyBrella-container__legend {
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -262,11 +262,11 @@
     text-transform: uppercase;
     color: #43806C;
 }
-.banner-container__reasons-wrapper {
+.whyBrella-container__reasons-wrapper {
     width: 478px;
     height: 138px;
 }
-.banner-container__heading {
+.whyBrella-container__heading {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -275,7 +275,7 @@
     color: #214E41;
     margin-top: 20px;
 }
-.banner-container__descr {
+.whyBrella-container__description {
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -285,20 +285,20 @@
     color: #757575;   
     margin-top: 34px;
 }
-.banner-container__percent-link-wrapper {
+.whyBrella-container__percent-link-wrapper {
     width: 107px;
     text-align: center;
     position: relative;
     margin-top: 24px;
 }
-.banner-container__planlink-hr {
+.whyBrella-container__planlink-hr {
     background: #214E41;
     width: 100%;
     height: 2px;
     position: absolute;
     bottom: 2px;
 }
-.banner-container__planlink {
+.whyBrella-container__planlink {
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -308,10 +308,10 @@
     color: #214E41;
     text-decoration: none;
 }
-.banner-container__statistic-wrapper {
+.whyBrella-container__statistic-wrapper {
     display: flex;
 }
-.banner-container__percent {
+.whyBrella-container__percent {
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -319,7 +319,7 @@
     line-height: 90px;
     color: #214E41;
 }
-.banner-container__percent-descr {
+.whyBrella-container__percent-description {
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -329,11 +329,11 @@
     color: #214E41;
     margin-top: 30px;
 }
-.banner-container__percent-descr:last-child {
+.whyBrella-container__percent-description:last-child {
     width: 189px;
     margin-top: 0;
 }
-.banner-container__percent-link {
+.whyBrella-container__percent-link {
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -343,13 +343,13 @@
     color: #214E41;
     padding-left: 4px;
 }
-.banner-container__hr {
+.whyBrella-container__hr {
     height: 2px;
     width: 510px;
     background: #F0A446;
     position: absolute;
 }
-.banner-container__table > tbody tr {
+.whyBrella-container__table > tbody tr {
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -358,15 +358,15 @@
     text-align: center;
     color: #214E41
 }
-.banner-container__table > tbody > tr > td:first-child {
+.whyBrella-container__table > tbody > tr > td:first-child {
     vertical-align: bottom;
     padding-left: 32px;
 }
-.banner-container__table > tbody > tr > td:last-child {
+.whyBrella-container__table > tbody > tr > td:last-child {
     vertical-align: bottom;
     padding-left: 40px;
 }
-.banner-container__table > tbody tr:last-child {
+.whyBrella-container__table > tbody tr:last-child {
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
@@ -381,17 +381,17 @@ caption {
     text-align: center;
     color: #757575;
 }
-.banner2-container {
+.BrellaBrings-container {
     display: flex;
 }
-.banner2-container__ban1,
-.banner6-container__ban2 {
+.BrellaBrings-container__banner-left,
+.letsTalk-container__banner-description {
     background: #E3EEED;
 }
-.banner2-container__ban2 {
+.BrellaBrings-container__banner-right {
     background: #214E41;
 }
-.banner2-container__legend {
+.BrellaBrings-container__legend {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -402,13 +402,13 @@ caption {
     color: #214E41;
     padding: 120px 0 0 120px;
 }
-.banner2-container__headlink-wrap {
+.BrellaBrings-container__headlink-wrap {
     display: flex;
     align-items: center;
     gap: 18px;
     padding: 29px 197px 0 120px;
 }
-.banner2-container__headlink {
+.BrellaBrings-container__headlink {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -417,7 +417,7 @@ caption {
     color: #214E41;
     width: 345px;
 }
-.banner2-container__list {
+.BrellaBrings-container__list {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -426,10 +426,10 @@ caption {
     color: #43806C;
     padding: 18px 0 129px 120px;
 }
-.banner2-container__list li {
+.BrellaBrings-container__list li {
     padding-top: 18px;
 }
-.banner2-container__ban-descr {
+.BrellaBrings-container__banner-description {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -439,24 +439,27 @@ caption {
     color: #FFFFFF;
     padding: 165px 132px 0 115px;
 }
-.banner2-container__ban-descr:last-child {
+.BrellaBrings-container__banner-description:last-child {
     padding: 34px 132px 203px 115px;
 }
-.banner3-container__section1,
-.banner3-container__section2,
-.banner3-container__section3 {
+.Oneplan-container__NoOne-section,
+.Oneplan-container__section-table,
+.Oneplan-container__betterClaims-section {
     display: flex;
     padding-left: 120px;
     padding-right: 120px;
 }
-.banner3-container__wrapper1 {
+.Oneplan-container__NoOne-section {
+    justify-content: space-between;
+}
+.Oneplan-container__wrapper-left {
     width: 556px;
 }
-.banner3-container__wrapper1,
-.banner3-container__wrapper2 {
+.Oneplan-container__wrapper-left,
+.Oneplan-container__wrapper-right {
     padding-top: 120px;
 }
-.banner3-container__legend1 {
+.Oneplan-container__legend-left {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -466,7 +469,7 @@ caption {
     text-transform: uppercase;
     color: #43806C;
 } 
-.banner3-container__headlink1 {
+.Oneplan-container__headlink-left {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -475,7 +478,7 @@ caption {
     color: #214E41;
     padding-top: 20px;
 }
-.banner3-container__ban-descr1 {
+.Oneplan-container__banner-description-left {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -485,21 +488,18 @@ caption {
     color: #757575;
     padding-top: 34px;
 }
-.banner3-container__illustration1 {
+.Oneplan-container__illustration-left {
     height: 298px;
     width: 560px;
     margin-left: 83px;
 }
-.banner3-container__section2 table {
+.Oneplan-container__section-bigNumbers {
+    display: flex;
+    gap: 25px;
     padding-top: 60px;
+    margin: 0 120px;
 }
-.banner3-container__section2 td {
-    padding-left: 50px;
-}
-.banner3-container__section2 td:first-child {
-    padding-left: 0;
-}
-.banner3-container__section2 tr:first-child {
+.Oneplan-container__head {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -507,32 +507,32 @@ caption {
     line-height: 78px;
     color: #F0A446;
 }
-.banner3-container__section2 tr:last-child {
+.Oneplan-container__description {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
     line-height: 22px;
     letter-spacing: 0.02px;
-    color: #214E41;
+    color: #214E41;  
 }
-.banner3-container__section3 {
+.Oneplan-container__betterClaims-section {
     margin-top: 117px;
     height: 500px;
 }
-.banner3-container__wrapper3 {
+.Oneplan-container__Iphone-wrapper {
     width: 50%;
 }
-.banner3-container__illustration2 {
+.Oneplan-container__Iphone-illustration {
     vertical-align: bottom;
     padding-left: 115px;
 }
-.banner3-container__wrapper4 {
+.Oneplan-container__nearIphone-wrapper {
     width: 50%;
     padding: 69px 0 0 34px;
 }
-.banner3-container__legend2,
-.banner4-container__legend2 {
+.Oneplan-container__nearIphone-legend,
+.forEmployers-container__legend {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 900;
@@ -542,11 +542,11 @@ caption {
     text-transform: uppercase;
     color: #43806C;
 }
-.banner3-container__headlink2,
-.banner4-container__headlink2,
-.banner5-container__headlink,
-.banner6-container__headlink1,
-.banner6-container__headlink2 {
+.Oneplan-container__nearIphone-headlink,
+.forEmployers-container__headlink,
+.proudly-container__headlink,
+.letsTalk-container__first-headlink,
+.letsTalk-container__second-headlink {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -555,8 +555,8 @@ caption {
     color: #214E41;
     padding-top: 20px;
 }
-.banner3-container__ban-descr2,
-.banner4-container__ban-descr2 {
+.Oneplan-container__nearIphone-description,
+.forEmployers-container__banner-description {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -578,63 +578,62 @@ caption {
     padding-top: 24px;
     text-decoration: none;
 }
-.banner3-container__hr,
-.banner4-container__hr {
+.Oneplan-container__hr,
+.forEmployers-container__hr {
     height: 2px;
     margin-top: 14px;
     background: #214E41;
 }
-.banner3-container__hr {
+.Oneplan-container__hr {
     width: 88px;
 }
-.banner4-container__hr {
+.forEmployers-container__hr {
     width: 100px;
 }
-.banner4-container {
+.forEmployers-container {
     height: 522px;
     background-image: url(../img/work.png);
 }
-.banner4-container__wrapper {
+.forEmployers-container__wrapper {
     padding: 126px 829px 112px 120px;
 }
 
-.banner5-container__headlink {
+.proudly-container__headlink {
     text-align: center;
     padding-top: 120px;
 }
-.banner5-container__wrapslide {
+.proudly-container__wrapslide {
     display: flex;
     justify-content: center;
     align-items: center;
    /* gap: 80px;*/
     margin: 115px 120px 125px;
 }
-.banner5-container__hr {
+.proudly-container__hr {
     background: rgba(199, 199, 199, 0.37);
     width: 1350px;
     height: 1px;
     border-radius: 0px;
     margin: auto;
 }
-[class^="banner5-container__illustration"] {
+[class^="proudly-container__illustration"] {
     padding: 0 20px 0 60px;
 }
-.banner5-container__illustration5 {
+.proudly-container__illustration5 {
     padding: 0 60px;
 }
-.banner5-container5__wrapper2 {
-    margin: 120px 150px;
+.proudly-container__banners-wrapper {
+    display: flex;
+    gap: 40px;
+    margin: 120px 176px;
 }
-
-.banner5-container5__wrapper2 td {
-    box-sizing: content-box;
-    max-width: 335px;
-    padding: 0 20px;
+.proudly-container__banners {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
 }
-[class^="banner5-container__img"] {
-    height: 100%;
-}
-.banner5-container5__wrapper2 tr:nth-child(2) td {
+.proudly-container__head {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -643,38 +642,34 @@ caption {
     letter-spacing: 0.05px;
     text-transform: uppercase;
     color: #43806C;
-    vertical-align: top;
-    padding-top: 20px;
 }
-.banner5-container5__wrapper2 tr:nth-child(3) td {
+.proudly-container__description {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color: #214E41;
-    vertical-align: top;
-    padding-top: 15px;
 }
-.banner6-container {
+.letsTalk-container {
     display: flex;
 }
-.banner6-container__ban1,
-.banner6-container__ban2 {
+.letsTalk-container__illustration,
+.letsTalk-container__description {
     width: 50%;
 }
-.banner6-container__ban1 {
+.letsTalk-container__illustration {
     background-image: url(../img/oldman.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.banner6-container__headlink1 {
+.letsTalk-container__first-headlink {
     padding: 144px 177px 0 120px;
 }
-.banner6-container__headlink2 {
+.letsTalk-container__second-headlink {
     padding: 46px 0 0 120px;
 }
-.banner6-container__button {
+.letsTalk-container__button {
     box-sizing: content-box;
     text-align: center;
     font-family: 'Raleway';
@@ -691,7 +686,7 @@ caption {
     border-radius: 6px;
     margin: 60px 0 96px 120px;
 }
-.banner6-container__button:hover {
+.letsTalk-container__button:hover {
     cursor: pointer;
     background-color: #8faea3;
     transition: all 0.1s;
@@ -705,7 +700,7 @@ caption {
 .foot-container {
     padding: 100px 120px 50px 120px;
 }
-.foot-container__wrapper1 {
+.foot-container__top-wrapper {
     display: flex;
     position: relative;
     box-sizing: content-box;
@@ -719,13 +714,13 @@ caption {
     justify-content: space-between;
     margin-top: 16px;
 }
-.foot-container__footnav1 {
+.foot-container__foot-navigation {
     margin:0 0 0 105.5px;
 }
-.foot-container__footnav2 {
+.foot-container__foot-navigation_margin {
     margin:0 0 0 115px;
 }
-:is(.foot-container__footnav1, .foot-container__footnav2) dt {
+:is(.foot-container__foot-navigation, .foot-container__foot-navigation_margin) dt {
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
@@ -733,7 +728,7 @@ caption {
     letter-spacing: 0.02px;
     text-transform: uppercase;
 }
-:is(.foot-container__footnav1, .foot-container__footnav2) dd {
+:is(.foot-container__foot-navigation, .foot-container__foot-navigation_margin) dd {
     margin: 15px 0 0;
     font-style: normal;
     font-weight: 400;
@@ -812,23 +807,23 @@ caption {
     background: #FFFFFF;
     margin-bottom: 73px;
 }
-.foot-container__descr {
+.foot-container__description {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.02px;
 }
-.foot-container__descr:first-child {
+.foot-container__description:first-child {
     margin-bottom: 20px;
 }
-.foot-container__descr:nth-child(2) {
+.foot-container__description:nth-child(2) {
     margin-bottom: 24px;
 }
-.foot-container__descr:last-child {
+.foot-container__description:last-child {
     margin-bottom: 90px;
 }
-.foot-container__wrapper3 {
+.foot-container__bottom-wrapper {
     display: flex;
     justify-content: space-between;
 }
@@ -841,7 +836,7 @@ caption {
     padding-right: 10px;
     border-right: solid 1px white;
 }
-.foot-container__link2 {
+.foot-container__link-YouTube {
     position: relative;
 }
 .playsvg {
