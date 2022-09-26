@@ -580,6 +580,7 @@ caption {
     justify-content: center;
     align-items: center;
     margin: 115px 0 0;
+    position: relative;
 }
 .proudly-container__wrap-slide::after {
     content: attr(div);
