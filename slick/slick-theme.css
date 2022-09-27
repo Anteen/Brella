@@ -43,7 +43,7 @@
 }
 .slick-prev
 {
-    background-image: url(/img/lv.svg);
+    background-image: url(./img/lv.svg);
     background-color: #fff;
     left: 0;
 }
@@ -52,7 +52,7 @@
     left: auto;
 }
 .slick-next {
-    background-image: url(/img/rv.svg);
+    background-image: url(./img/rv.svg);
     background-color: #fff;
     right: 0;
 }
