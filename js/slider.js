@@ -1,4 +1,4 @@
-$('.proudly-container__wrap-slide').slick({
+$('.proudly__wrap-slide').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 4,
